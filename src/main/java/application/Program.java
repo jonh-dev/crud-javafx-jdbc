@@ -10,6 +10,8 @@ import java.io.IOException;
 
 public class Program extends Application {
 
+    private static Scene mainScene;
+
     @Override
     public void start(Stage primaryStage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(Program.class.getResource("/gui/MainView.fxml"));
@@ -18,10 +20,14 @@ public class Program extends Application {
         scrollPane.setFitToHeight(true);
         scrollPane.setFitToWidth(true);
 
-        Scene mainScene = new Scene(scrollPane);
+        mainScene = new Scene(scrollPane);
         primaryStage.setTitle("Hello!");
         primaryStage.setScene(mainScene);
         primaryStage.show();
+    }
+
+    public static Scene getMainScene(){
+        return mainScene;
     }
 
     public static void main(String[] args) {
