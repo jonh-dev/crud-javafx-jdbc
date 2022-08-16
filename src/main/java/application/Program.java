@@ -13,17 +13,21 @@ public class Program extends Application {
     private static Scene mainScene;
 
     @Override
-    public void start(Stage primaryStage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(Program.class.getResource("/gui/MainView.fxml"));
-        ScrollPane scrollPane = fxmlLoader.load();
+    public void start(Stage primaryStage){
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(Program.class.getResource("/gui/MainView.fxml"));
+            ScrollPane scrollPane = fxmlLoader.load();
 
-        scrollPane.setFitToHeight(true);
-        scrollPane.setFitToWidth(true);
+            scrollPane.setFitToHeight(true);
+            scrollPane.setFitToWidth(true);
 
-        mainScene = new Scene(scrollPane);
-        primaryStage.setTitle("Hello!");
-        primaryStage.setScene(mainScene);
-        primaryStage.show();
+            mainScene = new Scene(scrollPane);
+            primaryStage.setTitle("Crud JavaFX with JDBC");
+            primaryStage.setScene(mainScene);
+            primaryStage.show();
+        } catch (IOException e){
+            e.printStackTrace();
+        }
     }
 
     public static Scene getMainScene(){
