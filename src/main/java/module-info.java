@@ -21,5 +21,8 @@ module application.crudjavafxjdbc {
     exports gui;
     opens gui to javafx.fxml, javafx.base;
 
+    exports gui.util;
+    opens gui.util to javafx.fxml;
+
 
 }
