@@ -10,6 +10,7 @@ module application.crudjavafxjdbc {
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
+    requires java.sql;
 
     exports model.entities;
     opens model.entities to javafx.fxml;
