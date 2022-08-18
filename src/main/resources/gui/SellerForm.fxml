@@ -2,6 +2,10 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<<<<<<< HEAD
+<?import javafx.scene.control.ComboBox?>
+=======
+>>>>>>> 2a38bba79c0fb419407284b12e3c56e995120f94
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
@@ -39,8 +43,19 @@
                </padding></Label>
             <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
                <children>
+<<<<<<< HEAD
+                  <Button fx:id="btSave" mnemonicParsing="false" onAction="#onBtSaveAction" text="Save">
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin></Button>
+                  <Button fx:id="btCancel" mnemonicParsing="false" onAction="#onBtCancelAction" text="Cancel">
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin></Button>
+=======
                   <Button fx:id="btSave" mnemonicParsing="false" onAction="#onBtSaveAction" text="Save" />
                   <Button fx:id="btCancel" mnemonicParsing="false" onAction="#onBtCancelAction" text="Cancel" />
+>>>>>>> 2a38bba79c0fb419407284b12e3c56e995120f94
                </children>
             </HBox>
             <Label text="Email" GridPane.rowIndex="2" />
@@ -65,6 +80,10 @@
                   <Insets left="10.0" />
                </padding>
             </Label>
+<<<<<<< HEAD
+            <ComboBox fx:id="comboBoxDepartment" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+=======
+>>>>>>> 2a38bba79c0fb419407284b12e3c56e995120f94
          </children>
       </GridPane>
    </children>

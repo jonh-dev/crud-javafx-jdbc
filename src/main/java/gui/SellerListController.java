@@ -19,6 +19,10 @@ import javafx.scene.layout.Pane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import model.entities.Seller;
+<<<<<<< HEAD
+import model.services.DepartmentService;
+=======
+>>>>>>> 2a38bba79c0fb419407284b12e3c56e995120f94
 import model.services.SellerService;
 
 import java.io.IOException;
@@ -109,7 +113,12 @@ public class SellerListController implements Initializable, DataChangeListener {
 
             SellerFormController controller = loader.getController();
             controller.setSeller(obj);
+<<<<<<< HEAD
+            controller.setServices(new SellerService(), new DepartmentService());
+            controller.loadAssociatedObjects();
+=======
             controller.setSellerService(new SellerService());
+>>>>>>> 2a38bba79c0fb419407284b12e3c56e995120f94
             controller.subscribeDataChangeListener(this);
             controller.updateFormData();
 
