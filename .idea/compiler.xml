@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="crud-javafx-jdbc" target="18" />
+      <module name="crud-javafx-jdbc" target="17" />
     </bytecodeTargetLevel>
   </component>
 </project>
